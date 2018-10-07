@@ -3,7 +3,7 @@
 ## Sentiment Analysis
 Based on the [Sentiment Analysis Model](https://algorithmia.com/algorithms/nlp/SentimentAnalysis).
 
-Takes input from either stdin or as args and returns a sentiment score for each value.  Multiple values can be passed in on new lines through stdin.
+Takes input from either stdin or as args and returns a sentiment score for each value.  Each line from the stdin is handled as a separate value.
 
 Values are sent through the model asynchronously and may not be in the same order they were submitted. 
 

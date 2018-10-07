@@ -1,3 +1,0 @@
-I love Golang
-Cats are pretty awesome
-Wasps are a bunch of assholes

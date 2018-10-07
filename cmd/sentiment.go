@@ -25,13 +25,10 @@ import (
 // sentimentCmd represents the sentiment command
 var sentimentCmd = &cobra.Command{
 	Use:   "sentiment",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
+	Short: "Detect the sentiment of text",
+	Long: `Takes input from either stdin or as args and returns a sentiment score for each value.  Multiple values can be passed by separating the values with a line break.
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+Values are sent through the model asynchronously and may not be in the same order they were submitted.`,
 	Args: func(cmd *cobra.Command, args []string) error {
 		fi, _ := os.Stdin.Stat() // get the FileInfo struct describing the standard input.
 
